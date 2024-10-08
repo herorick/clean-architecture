@@ -1,5 +1,5 @@
 # Sử dụng Node.js làm base image
-FROM node:18
+FROM node:latest
 
 # Thiết lập thư mục làm việc
 WORKDIR /usr/src/app
@@ -15,4 +15,4 @@ COPY ./src ./src
 EXPOSE 3000
 
 # Lệnh khởi động ứng dụng
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
