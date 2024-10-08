@@ -1,10 +1,10 @@
 {
   "name": "clean-architecture-api",
   "version": "1.0.0",
-  "main": "index.js",
   "type": "module",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "nodemon -e ts,js --exec ts-node src/index.ts",
+    "dev": "tsx watch src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -23,9 +23,9 @@
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.7.0",
-    "nodemon": "^3.1.7",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1",
+    "tsx": "^4.19.1",
     "winston": "^3.15.0"
   },
   "devDependencies": {
@@ -37,8 +37,7 @@
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "prettier": "^3.3.3",
-    "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.6.2"
   }
 }
