@@ -1,0 +1,1 @@
+# In the infrastructure layer, implement the interfaces defined in the domain layer. This is where you interact with databases or external services.
